@@ -596,6 +596,10 @@ video {
   top: 75%;
 }
 
+.top-1\/2 {
+  top: 50%;
+}
+
 .mb-5 {
   margin-bottom: 1.25rem;
 }
@@ -636,10 +640,6 @@ video {
   justify-content: space-between;
 }
 
-.p-10 {
-  padding: 2.5rem;
-}
-
 .font-open {
   font-family: Open Sans, sans-serif;
 }
@@ -678,39 +678,90 @@ video {
   opacity: 1;
 }
 
-@media (min-width: 768px) {
-  .sm\:w-\[768px\] {
-    width: 768px;
+@media not all and (min-width: 768px) {
+  .max-sm\:absolute {
+    position: absolute;
   }
 
-  .sm\:w-full {
+  .max-sm\:bottom-0 {
+    bottom: 0px;
+  }
+
+  .max-sm\:top-3\/4 {
+    top: 75%;
+  }
+
+  .max-sm\:top-1\/2 {
+    top: 50%;
+  }
+
+  .max-sm\:h-\[154px\] {
+    height: 154px;
+  }
+
+  .max-sm\:max-h-\[154px\] {
+    max-height: 154px;
+  }
+
+  .max-sm\:w-full {
     width: 100%;
   }
 
-  .sm\:w-\[500px\] {
-    width: 500px;
+  .max-sm\:w-\[100px\] {
+    width: 100px;
   }
 
-  .sm\:p-10 {
-    padding: 2.5rem;
+  .max-sm\:w-\[154px\] {
+    width: 154px;
   }
 
-  .sm\:p-2 {
-    padding: 0.5rem;
+  .max-sm\:object-contain {
+    -o-object-fit: contain;
+       object-fit: contain;
   }
 
-  .sm\:p-5 {
-    padding: 1.25rem;
+  .max-sm\:object-cover {
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+
+  .max-sm\:object-fill {
+    -o-object-fit: fill;
+       object-fit: fill;
+  }
+
+  .max-sm\:object-none {
+    -o-object-fit: none;
+       object-fit: none;
+  }
+
+  .max-sm\:object-scale-down {
+    -o-object-fit: scale-down;
+       object-fit: scale-down;
+  }
+
+  .max-sm\:opacity-100 {
+    opacity: 1;
+  }
+}
+
+@media (min-width: 768px) {
+  .sm\:w-\[375px\] {
+    width: 375px;
+  }
+
+  .sm\:w-\[768px\] {
+    width: 768px;
   }
 }
 
 @media (min-width: 992px) {
-  .md\:w-\[992px\] {
-    width: 992px;
+  .md\:w-\[490px\] {
+    width: 490px;
   }
 
-  .md\:w-\[218px\] {
-    width: 218px;
+  .md\:w-\[992px\] {
+    width: 992px;
   }
 }
 
@@ -732,4 +783,34 @@ video {
   .xl\:w-\[330px\] {
     width: 330px;
   }
+}
+
+
+@media only screen and (max-width: 768px) {
+  
+    .mobile-h1 {
+      color: #fff;
+      font-size: 16px;
+      display: flex;
+      justify-content: center; 
+      align-items: center; 
+      height: 5vh; 
+  }
+  
+  .mobile-button {
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    opacity: 1;
+    position: absolute;
+    font-weight: 600;
+    width: 200px;
+    left: 50%; 
+    transform: translateX(-50%); 
+    line-height: 24px;
+  }
+ 
+ 
+
+
 }
