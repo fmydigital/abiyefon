@@ -636,6 +636,10 @@ video {
   justify-content: space-between;
 }
 
+.p-10 {
+  padding: 2.5rem;
+}
+
 .font-open {
   font-family: Open Sans, sans-serif;
 }
@@ -681,6 +685,22 @@ video {
 
   .sm\:w-full {
     width: 100%;
+  }
+
+  .sm\:w-\[500px\] {
+    width: 500px;
+  }
+
+  .sm\:p-10 {
+    padding: 2.5rem;
+  }
+
+  .sm\:p-2 {
+    padding: 0.5rem;
+  }
+
+  .sm\:p-5 {
+    padding: 1.25rem;
   }
 }
 
